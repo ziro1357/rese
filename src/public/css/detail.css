@@ -1,0 +1,65 @@
+.detail {
+    max-width: 1200px;
+    display: flex;
+
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.shop__area{
+    margin-right: 10px;
+}
+
+.outline{
+    width: 600px;
+}
+
+.book-form{
+    margin-left: 100px;
+    width: 500px;
+    height: 600px;
+    margin-top: 50px;
+    background-color: #3560F6;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail__content{
+    margin-top: 100px;
+    margin-right: 100px;
+    width: 500px;
+    height: 500px;
+}
+
+.detail__name {
+    display: flex;
+}
+
+.detail__img img {
+    /* 800:533 */
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+table {
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 400px;
+    height: 150px;
+    background-color: #5580F7;
+    color: #fff;
+}
+
+th{
+    width: 150px;
+    padding-left: 20px;
+    text-align: left
+}
