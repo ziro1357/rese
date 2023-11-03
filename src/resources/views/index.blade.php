@@ -8,8 +8,23 @@
 
 
 <div class="shop__content">
-  <div class="search-form">
-  </div>
+  <form class="search-form" action="/a" method="get">
+    @csrf
+    <select class="search-form__area" name="area">
+      <option value="">All area</option>
+        @foreach ($shops as $shop)
+        <option value="{{ $shop['area'] }}">{{ $shop['area'] }}</option>
+        @endforeach
+    </select>
+    <select class="search-form__genre" name="genre">
+      <option value="">All genre</option>
+        @foreach ($shops as $shop)
+        <option value="{{ $shop['genre'] }}">{{ $shop['genre'] }}</option>
+        @endforeach
+    </select>
+    <input class="search-form__item-input" type="text" name="keyword" value="{{ old('keyword') }}">
+  </form>
+  
 
   <div class="shop__table">
 
@@ -28,9 +43,9 @@
 	          <a href="detail/:shop_{{ $shop['id'] }}" class="shop_detail">詳しく見る</a>
             @if (Auth::check())
               @if($shop->is_liked_by_auth_user())
-              <a href="unlike/:shop_{{ $shop['id'] }}" class="shop_detail">X</a>
+              <a href="unlike/:shop_{{ $shop['id'] }}" >X</a>
               @else
-              <a href="like/:shop_{{ $shop['id'] }}" class="shop_detail">♡</a>
+              <a href="like/:shop_{{ $shop['id'] }}" >♡</a>
               @endif
             @endif
           </div>

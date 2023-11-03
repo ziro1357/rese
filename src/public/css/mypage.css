@@ -1,0 +1,169 @@
+.mypage {
+    max-width: 1200px;
+    display: flex;
+
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+}
+
+.book__title{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.book-table{
+    width: 400px;
+    height: 250px;
+    margin-bottom: 20px;
+    background-color: #3560F6;
+}
+
+
+.like{
+    margin-left: 50px;
+    margin-top: 50px;
+    max-width: 700px;
+    height: 600px;
+    background-color: #fff;
+}
+
+.username{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.like__title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.shop__table {
+    /* margin-top: 100px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop__item {
+    width: 280px;
+    height: 260px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.shop__img img {
+    width: 280px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.shop__summary {
+    padding: 15px 25px;
+}
+
+.shop__name {
+    font-weight: bold;
+}
+
+.category {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: left;
+    display: flex;
+}
+
+.shop__area {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.shop__genre {
+    display: inline-block;
+}
+
+.shop_like {
+    margin-left: 100px;
+}
+
+.shop_detail {
+    margin-right: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .category{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+} */
+
+/* .shop__area{
+    margin-right: 10px;
+} */
+
+/* .outline{
+    width: 600px;
+} */
+
+.book-form{
+    margin-left: 100px;
+    width: 500px;
+    height: 600px;
+    margin-top: 50px;
+    background-color: #3560F6;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail__content{
+    margin-top: 100px;
+    margin-right: 100px;
+    width: 500px;
+    height: 500px;
+}
+
+.detail__name {
+    display: flex;
+}
+
+.detail__img img {
+    /* 800:533 */
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* table {
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 400px;
+    height: 150px;
+    background-color: #5580F7;
+    color: #fff;
+}
+
+th{
+    width: 150px;
+    padding-left: 20px;
+    text-align: left
+} */

@@ -27,7 +27,7 @@
   </div>
 
 
-  <form class="book-form">
+  <form class="book-form" action="/reservation" method="post">
     @csrf
     <div class="book-form__title">予約</div>
     <input class="book-form__date" type="date" name="date" id="input-date" value="2023-04-01"/>
@@ -52,7 +52,7 @@
       <tr><th>number</th><td><span id="disp-number"></span>人</td></tr>
     </table>
 
-    <input type="hidden" name="user_id" value="ここ何にするか考えないと"/>
+    <input type="hidden" name="shop_id" value="{{ $detail['id'] }}"/>
 
     <div class="book-form__button">
       <button class="book-form__button-submit" type="submit">予約する</button>

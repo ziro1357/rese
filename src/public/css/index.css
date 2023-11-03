@@ -4,13 +4,19 @@
 
 .search-form{
     position: fixed;
-    top: 20px;
+    display: flex;
+    top: 25px;
     right: 200px;
     /* z-index: 2; */
-    width: 500px;
-    height: 60px;
+    width: 750px;
+    height: 50px;
     background-color: #fff;
 }
+
+
+
+
+
 
 .shop__table{
     margin-top: 100px;
@@ -61,4 +67,8 @@
 
 .shop_like {
     margin-left: 100px;
+}
+
+.shop_detail {
+    margin-right: 120px;
 }

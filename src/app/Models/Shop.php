@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Auth;
 
 class Shop extends Model
 {
-    public function shops(){
-        return $this->hasMany('App\Models\Shop');
+    public function reserves(){
+        return $this->hasMany('App\Models\Reservation');
     }
 
     public function likes(){
@@ -18,7 +18,7 @@ class Shop extends Model
 
 
  /**
-  * リプライにLIKEを付いているかの判定
+  * ショップにLIKEを付いているかの判定
   *
   * @return bool true:Likeがついてる false:Likeがついてない
   */
@@ -38,6 +38,27 @@ class Shop extends Model
     }
   }
 
+
+ /**
+  * ショップに予約があるかの判定
+  *
+  * @return bool true:Likeがついてる false:Likeがついてない
+  */
+  public function is_reserved_by_auth_user()
+  {
+    $id = Auth::id();
+
+    $reservations = array();
+    foreach($this->reservations as $reservation) {
+      array_push($reservations, $reservation->user_id);
+    }
+
+    if (in_array($id, $reservations)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 
 }
